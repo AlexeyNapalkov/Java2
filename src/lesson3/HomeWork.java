@@ -30,6 +30,16 @@ public class HomeWork {
             hm.put(s, counter);
             System.out.printf("'%s' встречается %d раз \n", s, counter);
         }
+        hm = new HashMap<String, Integer>();
+        for (String word: words
+             ) {
+            hm.merge(word, 1, Integer::sum);
+        }
+        for (String w:hm.keySet()
+             ) {
+            System.out.printf("'%s' встречается %d раз \n", w, hm.get(w));
+
+        }
     }
 
     private static void task2() {
