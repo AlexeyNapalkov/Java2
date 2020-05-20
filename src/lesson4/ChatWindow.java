@@ -67,7 +67,6 @@ public class ChatWindow extends JFrame {
         rootPanel.add(usrPanel, BorderLayout.SOUTH);
         usrPanel.setBorder(BorderFactory.createTitledBorder(BorderFactory.createLineBorder(Color.black), null, TitledBorder.DEFAULT_JUSTIFICATION, TitledBorder.DEFAULT_POSITION, null, null));
         usrMsg = new JTextArea();
-        usrMsg.setForeground(new Color(-7292031));
         usrMsg.setLineWrap(true);
         usrMsg.setRows(1);
         usrMsg.setWrapStyleWord(true);
